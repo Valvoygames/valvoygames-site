@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valvoy Games - Under Renovations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #353535;
+            color: #fff;
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            overflow: hidden;
+        }
+        .center-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+        }
+        .main-logo {
+            width: 340px;
+            height: 340px;
+            margin-right: 48px;
+            max-width: 40vw;
+            max-height: 40vw;
+            border-radius: 50%;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+        }
+        .renovation-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .renovation-text h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin: 0 0 0.2em 0;
+            line-height: 1;
+        }
+        .renovation-text p {
+            font-size: 2rem;
+            margin: 0.2em 0 0 0;
+            font-weight: 400;
+        }
+        .bottom-right {
+            position: absolute;
+            right: 48px;
+            bottom: 48px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .bottom-right-text {
+            font-size: 2rem;
+            margin-bottom: 0.5em;
+        }
+        .game-link-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+            transition: transform 0.2s;
+        }
+        .game-link-img:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 900px) {
+            .center-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .main-logo {
+                margin: 0 0 32px 0;
+            }
+            .bottom-right {
+                right: 16px;
+                bottom: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center-content">
+        <img src="img/ValvoyGames.png" alt="Valvoy Games Logo" class="main-logo">
+        <div class="renovation-text">
+            <h1>UNDER<br>RENOVATIONS</h1>
+            <p>Check back again soon!</p>
+        </div>
+    </div>
+    <div class="bottom-right">
+        <span class="bottom-right-text">Meanwhile...</span>
+        <a href="https://play.google.com/store/apps/details?id=com.valvoygames.sortedthecardgame" target="_blank" rel="noopener">
+            <img src="img/PlaySorted.png" alt="Sorted! The Color Card Game" class="game-link-img">
+        </a>
+    </div>
+</body>
+</html>
